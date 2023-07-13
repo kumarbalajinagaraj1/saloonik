@@ -27,9 +27,9 @@
     <section class="header">
         <div class=" dark-overlay">
             <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light bg-transparent px-5">
-                    <a class="navbar-brand" href="#"><img src="./images/header-logo.png" class="mt-3" alt="" style="height:70px;"></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-transparent px-5">
+                    <a class="navbar-brand" href="#"><img src="./images/titlelogo.png" class="mt-3" alt="" style="height:70px;"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" >
                         <span class="navbar-toggler-icon"></span>
                         </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
@@ -41,7 +41,7 @@
                                 <a class="nav-link" href="#service">Service</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#booking">Booking</a>
+                                <a class="nav-link" onclick="openDaySchedule('https://himanshoe.dayschedule.com/saloon-booking')">Booking</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link " href="#gallery">Gallery</a>
@@ -50,7 +50,7 @@
                                 <a class="nav-link " href="Blog.html">Blog</a>
                             </li> -->
                             <li class="nav-item">
-                                <a class="nav-link " href="#about">Contact Us</a>
+                                <a class="nav-link " href="#contact">Contact Us</a>
                             </li>
 
                         </ul>
@@ -61,51 +61,53 @@
                 <div class="row">
                     <div class="col-lg-12">
 
-                        <h4 class="Head-content-small">Welcome To HairCare</h4>
-                        <h1 class="text-white Head-content-lg">WE ARE PROFESSIONAL CARE FOR YOUR HAIR</h1>
-                        <button class="btn btn-transparent btn-lg py-2 px-4 " onclick="openDaySchedule('https://himanshoe.dayschedule.com/')">Book Now</button>
+                        <h4 class="Head-content-small">Welcome To Saxmästaren
+                        </h4>
+                        <h1 class="text-white Head-content-lg ">THE PROFESSIONAL CARE FOR YOUR HAIR</h1>
+                        <button class="btn btn-transparent btn-lg py-2 px-4 " onclick="openDaySchedule('https://himanshoe.dayschedule.com/saloon-booking')">Book Now</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- Columns -->
-    <section class="">
+    <section class="" id="about">
         <div class="row">
+            
+            <div class="col-md-6 align-items-stretch services-bg">
+                <div class="container text-center py-5 mt-5">
+                    <img src="./images/logosm.png" class=" logo-col" alt="">
+
+                    <p style="font-size: 19px"><b>The real Saxmästaren</b></p>
+                    <hr class="bg-tranparent" />
+                    <p class="text-muted px-5">På bästa läge i Göteborg hittar du Saxmästaren bästa frisör i Göteborg. Vårt team av erfarna barberare anpassar sig alltid efter dina specifika önskemål men kommer gärna med förslag och tips om du behöver det.
+                        Kontakta oss idag för att boka en tid eller kom förbi.</p>
+                    <!-- <button class="btn btn-transparent btn-lg py-2 px-4 ">Read Mores</button> -->
+                </div>
+            </div>
             <div class="col-md for-men align-items-stretch">
                 <div class="p-5 m-5 box-all">
                     <div class="container py-5 mt-5 box-inside">
                         <h3 class="text-center text-white">For Men</h3>
-                        <a href="#" class="pricing-men">
-                            <h5>See Pricing </h5>
+                        <a href="#service" class="pricing-men">
+                            <h5 class="bg-light">See Pricing </h5>
                         </a>
                     </div>
 
                 </div>
             </div>
-            <div class="col-md-3 align-items-stretch services-bg">
-                <div class="container text-center py-5 mt-5">
-                    <img src="./images/header-logo1.png" class=" logo-col" alt="">
-
-                    <p style="font-size: 19px"><b>Welcome To Saloon</b></p>
-                    <hr class="bg-tranparent" />
-                    <p class="text-muted">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Far far away, behind the word mountains, far from
-                        the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <button class="btn btn-transparent btn-lg py-2 px-4 ">Read Mores</button>
-                </div>
-            </div>
-            <div class="col-md for-women align-items-stretch">
+            <!-- <div class="col-md for-women align-items-stretch">
                 <div class="p-5 m-5 box-all">
                     <div class="container py-5 mt-5 box-inside">
-                        <h3 class="text-center text-white">For WOMen</h3>
+                        <h3 class="text-center text-white">For Women</h3>
                         <a href="#" class="pricing-men">
-                            <h5>See Pricing </h5>
+                            <h5 class="bg-light">See Pricing </h5>
                         </a>
                     </div>
 
                 </div>
 
-            </div>
+            </div> -->
 
         </div>
     </section>
@@ -114,14 +116,14 @@
         <div class="container text-center">
             <h4 style="color:#bf925b;">Services</h4>
             <h1 class="display-3 font-weight-bold"><b>Service Menu</b></h1>
-            <h6 class="text-muted"><b>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</b></h6>
+            <h6 class="text-muted"><b>Discover Our Services: Unveiling an Array of Exquisite Offerings</b></h6>
             <div class="row">
                 <div class="col-md-3">
                     <div class="card " style="border:0px">
                         <div class="card-body py-5  card-body-service services-bg">
                             <img src="./images/men-hair.png" class="w-50 py-3">
                             <h4 class="py-2 font-weight-bold">Haircut & Styling</h4>
-                            <p class="text-muted">A small river named Duden flows by their place and supplies.</p>
+                            <p class="text-muted">Unleash Your Style: Discover our expert Haircut & Styling services for a transformative look that reflects your unique personality.</p>
                         </div>
                     </div>
                 </div>
@@ -130,7 +132,7 @@
                         <div class="card-body  py-5 card-body-service services-bg">
                             <img src="./images/beard.png" class="w-50 py-3">
                             <h4 class="py-2 font-weight-bold">Beard</h4>
-                            <p class="text-muted">A small river named Duden flows by their place and supplies.</p>
+                            <p class="text-muted">Refine Your Masculine Charm: Explore Our Beard Grooming and Styling Services for a Sharp and Polished Look.</p>
                         </div>
                     </div>
                 </div>
@@ -139,7 +141,7 @@
                         <div class="card-body py-5  card-body-service services-bg">
                             <img src="./images/beauty-products.png" class="w-50 py-3">
                             <h4 class="py-2 font-weight-bold">MakeUp</h4>
-                            <p class="text-muted">A small river named Duden flows by their place and supplies.</p>
+                            <p class="text-muted">Enhance Your Natural Beauty: Experience our Professional Makeup Artistry for a Flawless and Radiant Look.</p>
                         </div>
                     </div>
                 </div>
@@ -148,7 +150,7 @@
                         <div class="card-body py-5  card-body-service services-bg">
                             <img src="./images/lifestyle.png" class="w-50 py-3">
                             <h4 class="py-2 font-weight-bold">Body Treatment</h4>
-                            <p class="text-muted">A small river named Duden flows by their place and supplies.</p>
+                            <p class="text-muted">Rejuvenate Your Body: Immerse Yourself in Our Luxurious Body Treatments for a Blissful and Nurturing Experience.</p>
                         </div>
                     </div>
                 </div>
@@ -205,7 +207,7 @@
         <div class="container text-center py-5">
             <h4 class="main-color">Artist Director </h4>
             <h1 class="display-3 font-weight-bold"><b>MakeUp Artist</b></h1>
-            <h6 class="text-muted"><b>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</b></h6>
+            <h6 class="text-muted"><b>Meet Our Best Makeup Artists: They are best because they make you look the best</b></h6>
         </div>
         <div class="container-fluid">
             <div class="owl-carousel owl-theme">
@@ -282,7 +284,7 @@
         <div class="container-fluid text-center">
             <h4 class="main-color text-center">Gallery </h4>
             <h1 class="display-3 font-weight-bold text-center">Our Gallery</h1>
-            <h6 class="text-muted py-5 text-center"><b> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, quam. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</b></h6>
+            <h6 class="text-muted py-5 text-center"><b> Discover the magic that happens within our doors and get a glimpse of the incredible transformations we can create for you. Welcome to our gallery of masterpieces, where beauty comes to life.</b></h6>
             <div class="row no-gutters">
                 <div class="col-md-3">
                     <a href="./images/work-1.jpg" class="image-link gallery-item" target="_blank" data-toggle="lightbox" data-gallery="img-gallery " data-height="560" data-width="560">
@@ -342,12 +344,12 @@
         <div class="container text-center">
             <h4 class="main-color py-3 ">Pricing </h4>
             <h1 class="display-4 font-weight-bold"><b>OUR PRICES</b></h1>
-            <h6 class="text-muted py-3"><b>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</b></h6>
+            <h6 class="text-muted py-3"><b>Only reasonable price as we know the value of hard earned money and the value of this service</b></h6>
             <div class="row">
                 <div class="col-md-3">
                     <div class="card-body-price bg-transparent mb-2 rounded">
                         <h4 class="main-color py-3">Hair style</h4>
-                        <h3 class="purple-color py-2">$50.00<span style="font-size: 16px;">/Service</span> </h3>
+                        <h3 class="purple-color py-2">SEK 50.00<span style="font-size: 16px;">/Service</span> </h3>
 
 
                         <ul class="list-group">
@@ -358,12 +360,12 @@
                             <li class="list-group-item list-styling">Hair Spa</li>
                         </ul>
                     </div>
-                    <button class="btn price-button px-3 py-2" type="submit">Get Offer</button>
+                    <!-- <button class="btn price-button px-3 py-2" type="submit">Get Offer</button> -->
                 </div>
                 <div class="col-md-3">
                     <div class="card-body-price bg-transparent mb-2 rounded">
                         <h4 class="main-color py-3">Hair style</h4>
-                        <h3 class="purple-color py-2">$50.00<span style="font-size: 16px;">/Service</span> </h3>
+                        <h3 class="purple-color py-2">SEK 150.00<span style="font-size: 16px;">/Service</span> </h3>
 
                         <ul class="list-group">
                             <li class="list-group-item list-styling">Hair Dryer</li>
@@ -373,12 +375,12 @@
                             <li class="list-group-item list-styling">Hair Spa</li>
                         </ul>
                     </div>
-                    <button class="btn price-button px-3 py-2" type="submit">Get Ofer</button>
+                    <!-- <button class="btn price-button px-3 py-2" type="submit">Get Ofer</button> -->
                 </div>
                 <div class="col-md-3">
                     <div class="card-body-price bg-transparent mb-2 rounded">
                         <h4 class="main-color py-3">Hair style</h4>
-                        <h3 class="purple-color py-2">$50.00<span style="font-size: 16px;">/Service</span> </h3>
+                        <h3 class="purple-color py-2">SEK 150.00<span style="font-size: 16px;">/Service</span> </h3>
 
                         <ul class="list-group">
                             <li class="list-group-item list-styling">Hair Dryer</li>
@@ -388,12 +390,12 @@
                             <li class="list-group-item list-styling">Hair Spa</li>
                         </ul>
                     </div>
-                    <button class="btn price-button px-3 py-2" type="submit">Get Offer</button>
+                    <!-- <button class="btn price-button px-3 py-2" type="submit">Get Offer</button> -->
                 </div>
                 <div class="col-md-3">
                     <div class="card-body-price bg-transparent mb-2 rounded">
                         <h4 class="main-color py-3">Hair style</h4>
-                        <h3 class="purple-color py-2">$50.00<span style="font-size: 16px;">/Service</span> </h3>
+                        <h3 class="purple-color py-2">SEK 150.00<span style="font-size: 16px;">/Service</span> </h3>
 
                         <ul class="list-group">
                             <li class="list-group-item list-styling">Hair Dryer</li>
@@ -403,9 +405,12 @@
                             <li class="list-group-item list-styling">Hair Spa</li>
                         </ul>
                     </div>
-                    <button class="btn price-button px-3 py-2" type="submit">Get Offer</button>
+                    <!-- <button class="btn price-button px-3 py-2" type="submit">Get Offer</button> -->
                 </div>
+
             </div>
+            <button class="btn btn-transparent btn-lg py-2 px-4 text-center justify-content-center mt-3" onclick="openDaySchedule('https://himanshoe.dayschedule.com/saloon-booking')">Book Now</button>
+
         </div>
 
 
@@ -480,25 +485,25 @@
     </section>
     <!-- Footer -->
     <section>
-        <div class="bg-dark py-5"id="about">
+        <div class="bg-dark py-5"id="contact">
             <div class="container py-5">
                 <div class="row">
                     <div class="col-md-3">
                         <ul class="list-group">
                             <li class="list-group-item">
-                                <h3 class="font-weight-bold text-white pb-4">HairCare</h3>
+                                <h3 class="font-weight-bold text-white pb-4">Saxmästaren</h3>
                             </li>
                             <li class="list-group-item">
-                                <p class="text-white ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed nihil ad atque, expedita voluptate libero, c!</p>
+                                <p class="text-white ">På bästa läge i Göteborg hittar du Saxmästaren bästa frisör i Göteborg.</p>
                             </li>
                             <div class="d-flex pt-3">
-                                <a href="#"><i class=" pl-3 text-white fab  fa-3x fa-facebook"></i></a>
-                                <a href="#"> <i class=" pl-3 text-white fab  fa-3x fa-instagram"></i></a>
-                                <a href="#"><i class=" pl-3 text-white fab  fa-3x fa-twitter"></i></a>
+                                <a href="https://www.facebook.com/Saxmasteren/"><i class=" pl-3 text-white fab  fa-3x fa-facebook"></i></a>
+                                <a href="https://www.facebook.com/Saxmasteren/"> <i class=" pl-3 text-white fab  fa-3x fa-instagram"></i></a>
+                                <a href="https://www.facebook.com/Saxmasteren/"><i class=" pl-3 text-white fab  fa-3x fa-twitter"></i></a>
                             </div>
                         </ul>
                     </div>
-                    <div class="col-md-3">
+                    <!-- <div class="col-md-3">
                         <ul class="list-group">
                             <li class="list-group-item">
                                 <h3 class="font-weight-bold text-white pb-4">Information</h3>
@@ -507,24 +512,24 @@
                             <li class="list-group-item">Privacy</li>
                             <li class="list-group-item">Terms&Condition</li>
                         </ul>
-                    </div>
+                    </div> -->
                     <div class="col-md-3">
                         <ul class="list-group">
                             <li class="list-group-item">
                                 <h3 class="font-weight-bold text-white pb-4">Links</h3>
                             </li>
-                            <li class="list-group-item nav-link">Home</li>
-                            <li class="list-group-item nav-link">About</li>
-                            <li class="list-group-item nav-link">Service</li>
-                            <li class="list-group-item nav-link">Work</li>
-                            <li class="list-group-item nav-link">About</li>
-                            <li class="list-group-item nav-link">Contact</li>
+                            <li class="list-group-item nav-link"><a href="index.html">Home</a></li>
+                            <li  class="list-group-item nav-link"><a href="#about">About</a></li>
+                            <li  class="list-group-item nav-link"><a href="#service">Service</a></li>
+                            <li class="list-group-item nav-link" onclick="openDaySchedule('https://himanshoe.dayschedule.com/saloon-booking')"">Book</li>
+                            <li  class="list-group-item nav-link"><a href="#gallery">Gallery</a></li>
+                            <li  class="list-group-item nav-link"><a href="#contact">Contact</a></li>
                         </ul>
                     </div>
                     <div class="col-md-3">
                         <ul class="list-group">
                             <li class="list-group-item">
-                                <h4 class="font-weight-bold text-white pb-3 pb-4">Have A Questions?</h4>
+                                <h4 class="font-weight-bold text-white pb-3 pb-4">Have any questions?</h4>
                             </li>
 
                             <div class="d-flex text-white">
@@ -536,7 +541,7 @@
                             <div class="d-flex text-white">
                                 <span class="fas fa-1x fa-phone-alt pr-3 pl-4 pt-1"></span>
 
-                                <p class="d-flex">090078601</p>
+                                <p class="d-flex">+46 (0)76-301 01 04</p>
                             </div>
 
                             <div class="d-flex text-white">
